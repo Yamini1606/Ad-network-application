@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Login',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        accentColor:Colors.green,
       ),
       home: HomePage(),
     );

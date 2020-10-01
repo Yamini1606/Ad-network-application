@@ -13,19 +13,20 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Padding(
-        padding: EdgeInsets.only(top: 300, left: 50, right: 50,bottom: 100),
+        padding: EdgeInsets.only(top: 300, left: 50, right: 50,bottom: 50),
         child: Column(
           children: <Widget>[
             RaisedButton(
                 color: Theme
                     .of(context)
-                    .primaryColorDark,
+                    .accentColor,
                 textColor: Theme
                     .of(context)
                     .primaryColorLight,
                 child: Text(
                   'Influencer',
                   textScaleFactor: 1.5,
+                  style: Theme.of(context).textTheme.headline6,
                 ),
                 onPressed: () {
                   setState(() {
@@ -46,6 +47,7 @@ class _HomePageState extends State<HomePage> {
                 child: Text(
                   'Advetiser',
                   textScaleFactor: 1.5,
+                  style: Theme.of(context).textTheme.headline6,
                 ),
                 onPressed: () {
                   setState(() {
